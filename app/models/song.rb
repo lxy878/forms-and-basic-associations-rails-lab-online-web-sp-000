@@ -13,5 +13,10 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents=(contents)
+  end
+
+  def note_contents
+    self.notes.collect {|note| note.conten}
+  end
 
 end
