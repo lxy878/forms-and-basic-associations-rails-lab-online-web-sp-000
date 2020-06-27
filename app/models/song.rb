@@ -11,4 +11,5 @@ class Song < ActiveRecord::Base
     binding.pry
     self.artist.name
   end
+  
 end
