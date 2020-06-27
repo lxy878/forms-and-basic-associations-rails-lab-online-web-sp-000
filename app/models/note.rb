@@ -5,4 +5,7 @@ class Note < ActiveRecord::Base
   def artist_name=(name)
 
   end
+
+  def artist_name
+  end
 end
