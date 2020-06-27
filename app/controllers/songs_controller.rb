@@ -1,4 +1,3 @@
-require 'pry'
 class SongsController < ApplicationController
   def index
     @songs = Song.all
@@ -13,7 +12,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    binding.pry
+    raise params
     @song = Song.new(song_params)
 
     if @song.save
