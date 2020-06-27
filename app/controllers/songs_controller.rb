@@ -12,7 +12,7 @@ class SongsController < ApplicationController
   end
 
   def create
-    bining.pry
+    binding.pry
     @song = Song.new(song_params)
 
     if @song.save
