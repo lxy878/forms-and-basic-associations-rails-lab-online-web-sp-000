@@ -11,6 +11,6 @@ class Song < ActiveRecord::Base
     self.artist ? self.artist.name : nil
   end
 
-  def song_genre_id
+  def genre_id
   end
 end
