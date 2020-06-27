@@ -12,6 +12,7 @@ class SongsController < ApplicationController
   end
 
   def create
+    bining.pry
     @song = Song.new(song_params)
 
     if @song.save
