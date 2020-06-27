@@ -7,6 +7,6 @@ class Note < ActiveRecord::Base
   end
 
   def artist_name
-    self.artist 
+    self.artist ? self.artist : nil
   end
 end
