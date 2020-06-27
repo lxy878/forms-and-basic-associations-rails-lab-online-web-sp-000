@@ -13,7 +13,7 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents=(contents)
-    contents.each {|content| self.notes.build(content: content) if content.empty?}
+    contents.each {|content| self.notes.build(content: content).save if content.empty?}
   end
 
   def note_contents
